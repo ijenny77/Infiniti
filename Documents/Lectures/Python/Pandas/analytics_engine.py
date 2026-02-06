@@ -10,6 +10,8 @@ print(f"Loaded {len(df)} sensor logs with {df['device_id'].nunique()} devices.")
 
 # Sample working functions
 
+devices = df['device_id'].unique()
+
 def compute_device_stats(df, device_id):
     # Return dict of stats for a single device
     df = df[df['device_id'] == device_id]
@@ -32,6 +34,11 @@ def compute_device_stats(df, device_id):
     }
     return device_stats
 
+def per_device_stats(df):
+    device_stats = df.groupby('device_id').describe()
+    device_stats = device_stats.reset_index()
+    return device_stats
+
 def get_anomalous_readings(device_series, threshold = 3):
     # Use z-score to identify outliers
     device_series["moisture_z"] = (
@@ -52,5 +59,5 @@ def analyze_by_zone(df, min_risk_percent = 30):
     return zone_stats, risky_zone_ids
 
 
-def analyze_signal_health(df, min_risk_percent = 30):
-    # Boolean indexing for signal health
+device_stats = per_device_stats(df)
+device_stats.to_json("data/device_stats.json", indent=4, orient="records")
