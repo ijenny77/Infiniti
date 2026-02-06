@@ -16,13 +16,32 @@ def merge_sensor_feeds(feed1, feed2, on_columns):
     # Merge two dataframes
     pass
 
+result = merge_sensor_feeds(moisture_feed, temp_feed, on_columns=['zone_id', 'timestamp'])
+print(result)
 
 def pivot_feed_by_sensor(feed, index_col, columns_col, values_col):
     # Create pivot table
     pass
 
+moisture_pivot = pivot_feed_by_sensor(
+    moisture_feed,
+    index_col = 'timestamp',
+    columns_col = 'zone_id',
+    values_col = 'moisture_level'
+)
+print(moisture_pivot)
+
 def analyze_correlations(feed1, feed2, merge_keys, pivot_index, pivot_columns, values):
     # Chains the above to create a correlation-ready table
     pass
 
+correlation_table = analyze_correlations(
+    feed1=moisture_feed,
+    feed2=temp_feed,
+    merge_keys=['zone_id', 'timestamp'],
+    pivot_index='timestamp',
+    pivot_columns='zone_id',
+    values=['moisture_level', 'temperature_c']
+)
+print(correlation_table)
 # Min-max Normalization
