@@ -534,176 +534,49 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.m-2 {
+  margin: 0.5rem;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.bg-\[url\(\'images\/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D\.webp\'\)\] {
+  background-image: url('images/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D.webp');
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+.bg-\[url\(\'images\\Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D\.webp\'\)\] {
+  background-image: url('images\Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D.webp');
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+.bg-cover {
+  background-size: cover;
 }
 
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
-.absolute {
-  position: absolute;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.relative {
-  position: relative;
+.pl-44 {
+  padding-left: 11rem;
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.hidden {
-  display: none;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[80\%\] {
-  max-width: 80%;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[rgb\(239\2c 237\2c 233\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 237 233 / var(--tw-bg-opacity));
-}
-
-.bg-\[rgb\(176\2c 165\2c 145\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(176 165 145 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
