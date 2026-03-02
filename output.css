@@ -542,32 +542,25 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.bg-\[url\] {
-  background-color: url;
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#020B24\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 11 36 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'images\/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D\.webp\'\)\] {
   background-image: url('images/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D.webp');
 }
 
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'images\/loyalty-tab\.webp\'\)\] {
-  background-image: url('images/loyalty-tab.webp');
-}
-
-.bg-\[url\(\'images\\loyalty-tab\.webp\'\)\] {
-  background-image: url('images\loyalty-tab.webp');
-}
-
 .bg-\[url\(\'images\/grads-tab\.webp\'\)\] {
   background-image: url('images/grads-tab.webp');
 }
 
-.bg-\[url\(\)\] {
-  background-image: url();
+.bg-\[url\(\'images\/loyalty-tab\.webp\'\)\] {
+  background-image: url('images/loyalty-tab.webp');
 }
 
 .bg-\[url\(\'images\/newcomers-tab\.webp\'\)\] {
@@ -608,3 +601,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+/* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    } */
