@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header>
-        <img src="images/favicon_152x152.avif" alt="logo">
-        <h1>INFINITI</h1>
-        <div>
+    <header class="flex gap-96 [#EFEDE9] p-6 border-b border-black">
+        <div class="flex gap-10">
+            <img class="h-20" src="images/favicon_152x152.avif" alt="logo">
+            <h1 class="pt-6">INFINITI</h1>
+        </div>
+        <div class="flex gap-10 pt-8">
             <a href="">Vehicles</a>
             <a href="">Shop</a>
             <a href="">Retailers</a>
             <a href="">Owners</a>
             <a href="">Service</a>
             <a href="">News & Blog</a>
-            <a href="">Build</a>
+            <a class="border rounded-3xl h-8 w-16 pl-2 bg-[#B0A591]  " href="">Build ></a>
             <a href="">EN</a>
             <a href="">search button</a>
         </div>
@@ -30,85 +32,191 @@
             <p>Includes a 1% INFINITI loyalty rate reduction</p>
             <p>Plus receive up to $3,000 bonus cash on select models.</p>
             <p>Available at participating Ontario retailers.</p>
-            <a href=""><div>Shop now ></div></a>
+            <a href=""><div class="border border-[#B0A591] text-black bg-[#B0A591] rounded-3xl w-52 p-2 font-semibold mt-10">Shop Now ></div></a>
         </div>
     </div>
     <section class="bg-[#020B24] text-white">
-        <div>
+        <div class="flex mb-20">
             <div>
-                <img src="images/INF-homepage-QX80sport-xld.avif" alt="">
+                <!-- <div class="absolute left-10 text-white text-2xl ">
+                    <p>QX80</p>
+                    <p>Eight-Passenger Full-size SUV</p>
+                </div> -->
+                <img src="images/INF-homepage-QX80sport-xld.avif" alt="model1">
+                <div class="flex w-1/2 gap-10 ml-20">
+                    <button>All Models</button>
+                    <button>QX50</button>
+                    <button>QX55</button>
+                    <button>QX60</button>
+                    <button>QX80</button>
+                </div>
             </div>
-            <div>
-                <img src="images/infiniti-qx60-luxury-seven-passenger-crossover-suv-wide-v2.jpeg" alt="">
-                <div>
-                    <img src="images/infiniti-qx55-luxury-crossover-coupe-v2-D.avif" alt="">
-                    <img src="images/infiniti-qx50-luxury-crossover-suv-v2-T.jpeg" alt="">
+            <div class="block w-1/2">
+                <img src="images/infiniti-qx60-luxury-seven-passenger-crossover-suv-wide-v2.jpeg" alt="model2">
+                
+                <div class="flex flex-cols-2">
+                    <img class="w-1/2 h-80" src="images/infiniti-qx55-luxury-crossover-coupe-v2-D.avif" alt="model3">
+                    <img class="w-1/2 h-80" src="images/infiniti-qx50-luxury-crossover-suv-v2-D.avif" alt="model4">
                 </div>
             </div>
         </div>
-        <img src="images/search_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="search button">
-        Build Price
-        <img src="images/settings_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        Search Inventory
-        <img src="images/shoppingmode_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        View Offers
-        <img class="" src="images/magnifying-glass-location-solid-full.svg" alt="">
-        Contact Retailer
-
-        <div>
-            <div>
-                <h1>INFINITI Distinction™</h1>
-                <p>Connected Convenience</p>
-                <p>Comprehensive Care</p>
-                <p>Complete Confidence</p>
-                <p>We strive to remove barriers from your day and empower your lifestyle by offering a suite of thoughtful services that protect one of your most precious resources – your time.Looking to start driving? Build and reserve your desired INFINITI model online in minutes.</p>
-                <a href="">Explore INFINITI Distinction ></a>
-                <a href="">Reserve INFINITI Online ></a>
+        <hr>
+        <div class="flex gap-40 mx-64 text-xl my-20 ">
+            <a href="" class="flex flex-col items-center text-center">
+                <img class="w-10" src="images/settings_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p >Build and Price</p>
+            </a>
+            <a href="" class="flex flex-col items-center text-center">
+                <img class="w-10"  src="images/search_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="search button">
+                <p>Search Inventory</p>
+            </a>
+            <a href="" class="flex flex-col items-center text-center">
+                <img class="w-10"  src="images/shoppingmode_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p>View Offers</p>
+            </a>
+            <a href="" class="flex flex-col items-center text-center">
+                <img class="w-10" src="images/magnifying-glass-location-solid-full.svg" alt="">
+                <p>Contact Retailer</p>
+            </a>
+        </div>
+        <div class="flex">
+            <div class="mx-32 ">
+                <h1 class="text-4xl mb-20 mt-40 ">INFINITI Distinction™</h1>
+                <div class="flex gap-10 border-b pb-8 mb-8">
+                    <p>Connected Convenience</p>
+                    <p>Comprehensive Care</p>
+                    <p>Complete Confidence</p>
+                </div>
+                <pre>We strive to remove barriers from your day and
+empower your lifestyle by offering a suite of thoughtful
+services that protect one of your most precious
+resources – your time.
+Looking to start driving? Build and reserve your desired 
+INFINITI model online in minutes.</pre>
+                <div class="mt-16 w-1/2 flex flex-col gap-10">
+                    <a class="border rounded-3xl p-2" href="">Explore INFINITI Distinction ></a>
+                    <a class="border rounded-3xl p-2" href="">Reserve INFINITI Online ></a>
+                </div>
             </div>
-            <div>
+            <div class="w-1/2">
                 <img src="images/friends-inside-infiniti-qx60-sharing-food-D.jpeg" alt="">
             </div>
         </div>
     </section>
-    <div class="bg-[url('images/2025-IIHS-banner-hp-xld.jpg bg-cover')] bg-no-repeat bg-cover">
-        <p>2026 QX80 and 2026 QX60 Awards</p>
-        <p>IIHS 2025 TOP SAFETY PICK+</p>
-        <p>The 2026 INFINITI QX80 and 2026 INFINITI QX60 have both earned awards from the Insurance Institute for Highway Safety (IIHS), recognizing INFINITI's ongoing achievements in safety, advanced technology, and luxury craftsmanship.  [*]</p>
-        <a href="">Explore Qx60 ></a>
-        <a href="">Explore QX80 ></a>
+    <div class="bg-[url('images/2025-IIHS-banner-hp-xld.jpg')] bg-no-repeat bg-cover text-white py-28">
+        <p class="text-md ml-28">2026 QX80 and 2026 QX60 Awards</p>
+        <p class="text-4xl ml-28 pb-10">IIHS 2025 TOP <br> SAFETY PICK+</p>
+        <p class="ml-28 pb-6">The 2026 INFINITI QX80 and 2026 INFINITI <br> QX60 have both earned awards from the <br> Insurance Institute for Highway Safety (IIHS),<br> recognizing INFINITI's ongoing achievements <br> in safety, advanced technology, and luxury <br> craftsmanship.  [*]</p>
+        <a class="ml-28 border-2 rounded-3xl p-2" href="">Explore QX60 ></a>
+        <a class="ml-6 mb-20 border-2 rounded-3xl p-2" href="">Explore QX80 ></a>
     </div>
-    <div>
-        <img src="images/build-and-reserve-infiniti-vehicle-online-d.jpeg" alt="">
-        <div>
-            <p>INTERESTED IN AN INFINITI?</p>
-            <p>Select and Collect</p>
-            <p>Take the first step toward purchasing an INFINITI. Build and reserve your desired model online today.</p>
-            <a href="">Select and Collect ></a>
+    <div class="flex">
+        <img class="my-10 ml-4" src="images/build-and-reserve-infiniti-vehicle-online-d.jpeg" alt="">
+        <div class="mt-28 ml-16">
+            <p class="text-sm">INTERESTED IN AN INFINITI?</p>
+            <p class=" text-3xl mt-8 mb-2">Select and Collect</p>
+            <p class="mb-6">Take the first step toward purchasing an INFINITI. Build and reserve your desired model online today.</p>
+            <a class="border-4 border-black rounded-3xl px-2 py-1 bg-black text-white" href="">Select and Collect ></a>
         </div>
     </div>
-    <h1>DISCOVER INFINITI</h1>
-    <div>
-        <img src="images/infiniti-qx65-monograph-concept-vehicle-m.jpeg" alt="">
-        <p>Channeling A Legend: The QX65</p>
-        <p>Monograph Concept</p>
-        <p>Revealed at Pebble Beach, the elegant yet bold fastback silhouette of the QX65 Monograph coupe-crossover embodies the future of INFINITI design.</p>
-        <a href="">Read more ></a>
-    </div>
-    <div>
-        <img src="images/myinfiniti-and-owners-portal-d.jpeg" alt="">
-        <p>MyINFINITI and Owner’s Portal</p>
-        <p>The MyINFINITI app and Owner’s Portal are your personal link to your INFINITI car, crossover or SUV. Built with life in mind, they’re designed to allow you to get the most out of your new luxury vehicle.</p>
-        <a href="">Explore MyINFINITI</a>
-    </div>
-    <div>
-        <img src="images/infiniti-inventory-and-special-offers-D.jpeg" alt="">
-        <p>Luxury You Can Rely On</p>
-        <p>Embrace the many perks that come with INFINITI Certified Pre-Owned vehicles. Shop nearby inventory and offers, and drive off with the INFINITI you’ve always wanted.</p>
-        <a href="">Search Inventory ></a>
-        <a href="">View Special Offers ></a>
-    </div>
-    <footer>
-        
+    <section class="bg-[url('images/INFINITI_Primary_HorizonGraphic_RGB_16x9_V1_min.avif')] bg-no-repeat bg-cover">
+        <h1>DISCOVER INFINITI</h1>
+        <div class="flex gap-10 mx-40 ">
+            <div>
+                <img src="images/INF-homepage-Discover-INFINItI-QX80-xld.webp" alt="">
+                <p>Channeling A Legend: The QX65</p>
+                <p>Monograph Concept</p>
+                <p>Revealed at Pebble Beach, the elegant yet bold fastback silhouette of the QX65 Monograph coupe-crossover embodies the future of INFINITI design.</p>
+                <a href="">Read more ></a>
+            </div>
+            <div>
+                <img src="images/infiniti-qx65-monograph-concept-vehicle-m.jpeg" alt="">
+                <p>MyINFINITI and Owner’s Portal</p>
+                <p>The MyINFINITI app and Owner’s Portal are your personal link to your INFINITI car, crossover or SUV. Built with life in mind, they’re designed to allow you to get the most out of your new luxury vehicle.</p>
+                <a href="">Explore MyINFINITI</a>
+            </div>
+            <div>
+                <img src="images/myinfiniti-and-owners-portal-d.jpeg" alt="">
+                <p>Luxury You Can Rely On</p>
+                <p>Embrace the many perks that come with INFINITI Certified Pre-Owned vehicles. Shop nearby inventory and offers, and drive off with the INFINITI you’ve always wanted.</p>
+                <a href="">Search Inventory ></a>
+                <a href="">View Special Offers ></a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#020B24] text-white">
+        <div>
+            <a href="">INFINITI > </a>INFINITI Canada | Luxury Cars, SUVs & Crossovers
+            <button>English ∨</button>
+        </div>
+        <hr>
+        <div>
+            <p>LEARN</p>
+            <a href="">All Vehicles</a>
+            <a href="">Future & Concept</a>
+            <a href="">INFINITI Distinction™</a>
+            <a href="">INVISION Blog</a>
+            <a href="">Diversity & Inclusion</a>
+            <a href="">Vehicle Brochures</a>
+            <a href="">FAQs</a>
+            <a href="">Technician Internship</a>
+            <p>FOLLOW INFINITI</p>
+            <div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div>
+            <p>SHOP</p>
+            <a href=""> INFINITI Select and Collect</a>
+            <a href="">Build & Price</a>
+            <a href="">Search Inventory</a>
+            <a href="">Special Offers</a>
+            <a href="">Certified Pre-Owned</a>
+            <a href="">Compare to Competition</a>
+            <a href="">Archived Models</a>
+        </div>
+        <div>
+            <p>PURCHASE</p>
+            <a href=""> Financing & Leasing</a>
+            <a href="">Payment Estimator</a>
+            <a href="">Trade-In Estimator</a>
+            <a href="">Request a Quote</a>
+            <a href="">Get Pre-Approved</a>
+            <a href="">Locate a Retailer</a>
+            <a href="">Schedule a Test Drive</a>
+        </div>
+        <div>
+            <p></p>
+            <a href="">OWNERSHIP</a>
+            <a href="">INFINITI Owners Portal</a>
+            <a href="">INFINITI Financial Services</a>
+            <a href="">INFINITI InTouch®</a>
+            <a href="">Service & Maintenance</a>
+            <a href="">Roadside Assistance</a>
+            <a href="">Navigation Updates</a>
+            <a href="">Update Address</a>
+            <a href="">Update Ownership</a>
+            <a href="">ProPILOT Assist 2.1</a>
+        </div>
+        <hr>
+        <div>
+            <a href="">INFINITI Worldwide</a>
+            <a href="">Careers</a>
+            <a href="">Accessibility</a>
+            <a href="">Contact Us</a>
+            <a href="">Sitemap</a>
+        </div>
+        <div>
+            <a href="">Privacy Policy</a>
+            <a href=""> Legal</a>
+            <a href="">Cookies</a>
+            &copy;INFINITI 2026
+        </div>
     </footer>
 </body>
 </html>
