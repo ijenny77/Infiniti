@@ -13,17 +13,48 @@
             <h1 class="pt-6">INFINITI</h1>
         </div>
         <div class="flex gap-10 pt-8">
-            <a href="">Vehicles</a>
-            <a href="">Shop</a>
-            <a href="">Retailers</a>
-            <a href="">Owners</a>
-            <a href="">Service</a>
-            <a href="">News & Blog</a>
-            <a class="border rounded-3xl h-8 w-16 pl-2 bg-[#B0A591]  " href="">Build ></a>
-            <a href="">EN</a>
-            <a href="">search button</a>
+            <button  onclick="toggleMenu()">Vehicles∨</button>
+            <button>Shop</button>
+            <button>Retailers</button>
+            <button>Owners</button>
+            <button>Service</button>
+            <button>News & Blog</button>
+            <button class="rounded-3xl h-8 w-16 pl-2 bg-[#B0A591] " href="">Build ></button>
+            <button>EN</button>
+            <button>search button</button>
         </div>
     </header>
+
+    <div id="dropdownMenu" class="hidden bg-[url('images/INFINITI_Primary_HorizonGraphic_RGB_16x9_V1_min.avif')] bg-cover bg-no-repeat bg-[#EFEDE9] ">
+        <p class="text-4xl pt-16 pl-44 mb-20">Discover Your INFINITI</p>
+        <div class="flex gap-28 ml-44">
+            <div>
+                <p>All Vehicles</p><br>
+                <button class="underline font-bold mb-4 ">Crossovers & SUVs</button><br>
+                <a href="">Certified Pre-Owned ></a><br>
+                <a class="pt-10" href="">Future & Concept ></a><br>
+            </div>
+            <div class="grid grid-cols-3 gap-x-20 pb-32">
+                <div>
+                    <img class="w-64" src="images/infiniti-qx50-sport-trim-slate-grey.png.ximg.l_3_m.smart.avif" alt="">
+                    <p class="text-xl">2025 QX50</p>
+                </div>
+                <div>
+                    <img class="w-64" src="images/infiniti-qx55-sensory-trim-dynamic-sunstone-red.png.ximg.l_3_m.smart.avif" alt="">
+                    <p class="text-xl">2025 QX55</p>
+                </div>
+                <div>
+                    <img class="w-64" src="images/2026-infiniti-QX60-AUTOGRAPH-YCF.png.ximg.l_3_m.smart.avif" alt="">
+                    <p class="text-xl">2026 QX60</p>
+                </div>
+                <div>
+                    <img class="w-64" src="images/2026-infiniti-Sport-black-and-white-xld.png.ximg.l_3_m.smart.avif" alt="">
+                    <p class="text-xl">2026 QX80</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="bg-[url('images/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D.webp')] bg-cover bg-no-repeat m-2">
         <div class="text-white pl-44 py-20">
             <p>YOUR NEXT CHAPTER</p>
@@ -225,5 +256,11 @@ INFINITI model online in minutes.</pre>
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu(){
+            const menu = document.getElementById("dropdownMenu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
