@@ -21,7 +21,7 @@
             <button>News & Blog</button>
             <button class="rounded-3xl h-8 w-16 pl-2 bg-[#B0A591] " href="">Build ></button>
             <button>EN</button>
-            <button><img src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button onclick="toggleSearchBar()"><img src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
         </div>
     </header>
 <!--dropdown menu(Vehicles)-->
@@ -183,6 +183,16 @@
             </div> 
         </div>
     </div>
+
+    <!--SearchBar-->
+    <div id="searchbar" class="hidden bg-[#EFEDE9] flex pt-10 pb-16 ">
+        <input type="text" class="border-black border-2 ml-[28rem] w-[36rem] h-12 p-2 rounded-tl-md rounded-bl-md " placeholder="Search">
+        <div class="border-2 border-black pt-[0.5rem] px-4 rounded-tr-md rounded-br-md">
+            <img class="w-12 h-8" src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+    </div>
+
+
 
     <!--Build page-->
     <div class="flex">
@@ -350,6 +360,10 @@
         function toggleMenu3(){
             const menu = document.getElementById("dropdownMenu4");
             menu.classList.toggle("hidden");
+        }
+        function toggleSearchBar(){
+            const searchBar = document.getElementById("searchbar");
+            searchBar.classList.toggle("hidden"); 
         }
     </script>
 </body>
