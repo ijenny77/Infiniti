@@ -21,7 +21,7 @@
             <button>News & Blog</button>
             <a class="rounded-3xl h-8 w-16 pl-2 py-1 bg-[#B0A591] " href="build.html">Build ></a>
             <button>EN</button>
-            <button><img src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button onclick="toggleSearchBar()"><img src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
         </div>
     </header>
 <!--dropdown menu(Vehicles)-->
@@ -184,6 +184,13 @@
         </div>
     </div>
 
+<!--SearchBar-->
+    <div id="searchbar" class="hidden bg-white flex mt-6 mb-8 ">
+        <input type="text" class="border-black border-2 ml-[28rem] w-[36rem] h-10 p-2" placeholder="Search">
+        <div class="border-2 border-black pt-2 px-2">
+            <img src="images/blackSVGs/search_25dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+    </div>
 
     <div class="bg-[url('images/Infiniti-FebruaryRetail-PFA-Offers-QX50-QX80-ENINF-FEB-OFFERS-QX50-QX80-Offers-Page-1335x455-D.webp')] bg-cover bg-no-repeat m-2">
         <div class="text-white pl-44 py-20">
@@ -466,6 +473,10 @@ INFINITI model online in minutes.</pre>
         function toggleMenu3(){
             const menu = document.getElementById("dropdownMenu4");
             menu.classList.toggle("hidden");
+        }
+        function toggleSearchBar(){
+            const searchBar = document.getElementById("searchbar");
+            searchBar.classList.toggle("hidden"); 
         }
     </script>
 </body>
